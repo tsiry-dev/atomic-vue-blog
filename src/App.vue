@@ -14,8 +14,8 @@ import { toast } from "vue3-toastify";
 
 import { data } from '@/data/post.js';
 
-const posts = ref(data ?? []);
-const originalPosts = ref([]); // Ajout d'une copie de la liste originale
+const posts = ref(data);
+const originalPosts = ref(data); // Ajout d'une copie de la liste originale
 
 
 const postEdit = ref({});
